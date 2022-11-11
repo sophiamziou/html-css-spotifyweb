@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BG COLORS FOR LAYOUT */
+
+.bgc-red{
+    background-color: red;
+}
+
+.bgc-yellow{
+    background-color: yellow;
+}
+
+.bgc-blue{
+    background-color: lightskyblue;
+}
+
+.bgc-black{
+    background-color: rgba(0, 0, 0, 0.515);
+}
+
+/* MACRO LAYOUT */
+
+.sidebar{
+    height: 1000px;
+    width: 20%;
+    position: fixed;
+}
+
+.topbar{
+    height: 60px;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.main{
+    height: 2000px;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.footer{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+
