@@ -16,6 +16,10 @@
     background-color: rgb(20,25,34);
 }
 
+.bgc-{
+    background-color: yellow;
+}
+
 .bgc-blue{
     background-color: lightskyblue;
 }
@@ -62,6 +66,7 @@
 .main{
     width: calc(100% - 150px);
     position: absolute;
+    overflow: auto;
     top: 0;
     right: 0;
     z-index: -1;
@@ -70,20 +75,21 @@
 }
 
 .menù-main{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .menù-main ul{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 1rem;
+    flex-wrap: wrap;
+    margin: 0.5rem;
 }
 
 .menù-main ul li{
     list-style-type: none;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 
@@ -193,8 +199,25 @@ h6, li h5{
         margin: 0.5rem 0.25rem;
     }
 
-    .album{
-        justify-content: flex-start;
-    }
+
 }
 
+@media screen and (max-width: 490px) {
+
+    .sidebar{
+        width: 50px;
+    }
+
+    .main{
+        width: calc(100% - 50px);
+    }
+
+    .topbar{
+        width: calc(100% - 50px);
+    }
+
+    .menù-main{
+        width: 100%;
+    }
+
+}
