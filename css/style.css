@@ -77,10 +77,13 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
 }
 
 .menù-main ul li{
     list-style-type: none;
+    margin: 0 10px;
 }
 
 
@@ -113,7 +116,7 @@ h5{
     font-size: 0.75em;
 }
 
-h6{
+h6, li h5{
     color: rgb(97,101,106);
 }
 
