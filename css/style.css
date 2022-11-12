@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border:0.2px solid black;
 }
 
 /* BG COLORS FOR LAYOUT */
@@ -32,11 +34,21 @@
 
 /* MACRO LAYOUT */
 
+/* topbar layout */
+
+.topbar{
+    height: 80px;
+    width: calc(100% - 150px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
 
 /* sidebar layout */
 .sidebar{
-    height: 90vh;
-    width: 20%;
+    height: calc(100vh - 80px);
+    width: 150px;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -47,47 +59,79 @@
     width: 100%;
 }
 
-.menù{
-    height: 300px;
-}
-
-.user{
-    height: 100px;
-}
-
-/* topbar layout */
-
-.topbar{
-    height: 10vh;
-    width: 80%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 3;
-}
-
 /* main layout */
 
 .main{
-    height: 200vh;
-    width: 80%;
+    width: calc(100% - 150px);
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
+    padding: 80px 0;
+}
+
+section .row, .album{
+    width: 100%;
+}
+.album, .album-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.album-2{
+    justify-content: flex-start;
+}
+
+.album .col, .album-2 .col{
+    max-width: 12.5rem;
+    width: calc(100% / 6 - 0.5rem);
+    margin: 0.5rem 0.25rem;
+}
+
+h5{
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.album-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.album-content img{
+    width: 100%;
+}
+
+.artisti, .suggerimenti{
+    height: 100px;
+    width: 100px;
+}
+
+.menù-main{
+    width: 100%;
+}
+
+.menù-main ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 /* footer layout */
 
 .footer{
-    height: 10vh;
+    height: 80px;
     width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 3;
 }
 
-.player-bar{
+.player{
     display: flex;
     justify-content: space-between;
     height: 100%;
@@ -95,12 +139,48 @@
 
 .col-sm{
     width: 20%;
-    height: 100%;
 }
 
 .col-md{
     width: 40%;
-    height: 100%;
 }
 
+
+
+/* RESPOSIVE SCREENS */
+
+/* MEDIUM */
+
+@media screen and (max-width: 768px) {
+
+    .main{
+        width: calc(100% - 150px);
+    }
+
+    .album .col{
+        width: calc(100% / 4 - 0.5rem);
+        margin: 0.5rem 0.25rem;
+    }
+
+    .album{
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .main{
+        width: calc(100% - 150px);
+    }
+
+    .album .col{
+        width: calc(100% / 2 - 0.5rem);
+        margin: 0.5rem 0.25rem;
+    }
+
+    .album{
+        justify-content: flex-start;
+    }
+}
 
