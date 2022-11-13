@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid red;
 }
 
 /* BG COLORS FOR LAYOUT */
@@ -35,8 +34,6 @@
 .bgc-dark{
     background-color: blue;
 }
-
-
 
 /* UTILITY */
 
@@ -93,14 +90,18 @@
     padding: 0 15px;
 }
 
+.col-logosm{
+    display: none;
+}
+
 .logo{
-    height: 70px;
     display: flex;
     justify-content: center;
     padding-right: 30px;
 }
 
 .logo img{
+    height: 70px;
     width: 100%;
 }
 
@@ -354,6 +355,27 @@ h6, li h5{
 
     .sidebar{
         width: 50px;
+    }
+
+    .playlist, .none h5, .logo-bg, .none h4, hr{
+        display: none;
+    }
+
+    .none img{
+        margin: 5px auto;
+    }
+
+    .sidebar .row .col{
+        padding: 0;
+    }
+
+    .col-logosm{
+        display: block;
+        padding: 10px;
+    }
+
+    .margin10{
+        margin: 0;
     }
 
     .main{
