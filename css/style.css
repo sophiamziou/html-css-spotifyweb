@@ -127,6 +127,7 @@
     height: 35px;
     width: 35px;
     background-color: rgb(163, 163, 163);
+    border: 0px;
 }
 
 .new-play button i{
@@ -194,6 +195,12 @@
     margin: 10px;
 }
 
+.menù-main ul li hr{
+    display: none;
+    border: 1px solid lightgreen;
+    width: 70%;
+    margin: 2px auto;
+}
 
 .title {
     margin: 0.5rem;
@@ -392,6 +399,17 @@ h6, li h5{
     border-radius: 20px;  
 }
 
+.ball{
+    display: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position:absolute;
+    top: -5px;
+    left: 28%;
+    background-color: white;
+}
+
 /* HOVERS */
 
 /* images */
@@ -405,39 +423,88 @@ h6, li h5{
     display: block;
     width: 100%;
     height: auto;
-  }
+}
   
-  .middle {
+.middle {
     width: 100%;
     position: absolute;
     opacity: 0;
     top: 0;
-  }
+}
   
   
-  .container-img:hover .middle {
+.container-img:hover .middle {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     cursor: pointer;
-  }
+}
   
-  .play {
+.play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
-  }
+}
 
   /* button */
-
-  .top-btn button:hover{
+  
+.top-btn button:hover{
     font-size: 15px;
     cursor: pointer;
-  }
+}
+
+/* nav menù and sidebar hovers*/
+
+li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.new-play:hover button{
+    background-color: white;
+    cursor: pointer;
+}
+
+.menù-main li:hover #underline{
+    display: block;
+}
+
+.icons:hover .margin10{
+    padding: 0px 0px;
+}
+
+.icons3 .icons:hover{
+    border-left: 1px solid lightgreen;
+    padding-left: 15px;
+}
+
+/* footer */
+
+.text p:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.player-icons i, .line-player:hover, .line:hover{
+    cursor: pointer;
+}
+
+.fa-circle-play:hover{
+    font-size: 27px;
+}
+
+.line-player:hover::before, .line:hover::before{
+    background-color: lightgreen;
+}
+
+.line:hover .ball, .line-player:hover .ball{
+    display: block;
+}
 
 /* RESPOSIVE SCREENS */
 
