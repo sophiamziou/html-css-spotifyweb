@@ -12,8 +12,8 @@
 <body>
     <!-- SIDE BAR: 2 rows (menù and user) -->
     <nav>
-        <div class="sidebar bgc-red">
-            <div class="row menù bgc-pink">
+        <div class="sidebar bgc-sidebar">
+            <div class="row menù">
                 <!-- logo -->
                 <div class="col">
                     <div class="logo">
@@ -21,26 +21,31 @@
                     </div>
                 </div>
                 <!-- 3 icons menù -->
-                <div class="col">
+                <div class="col margin10">
                     <div class="icons">
-                        <img src="./img/home.svg" alt="home">
-                        <h5>Home</h5>
+                        <img class="greyimg" src="./img/home.svg" alt="home">
+                        <h5 class="white-text">Home</h5>
                     </div>
                     <div class="icons">
-                        <img src="./img/search.svg" alt="home">
+                        <img class="greyimg" src="./img/search.svg" alt="home">
                         <h5>Cerca</h5>
                     </div>
                     <div class="icons">
-                        <img src="./img/libreria.svg" alt="home">
+                        <img class="greyimg" src="./img/libreria.svg" alt="home">
                         <h5>La tua libreria</h5>
                     </div>
                 </div>
                 <!-- ul playlist -->
-                <div class="col playlist">
+                <div class="col playlist margin10">
                     <div class="content">
-                        <p>sottotitolo</p>
-                        <div>
-                            icona testo
+                        <h4 class="white-text margin10">
+                            PLAYLIST
+                        </h4>
+                        <div class="new-play margin10">
+                            <button>
+                                <i class="fa-sharp fa-solid fa-plus"></i>
+                            </button>
+                            <h4>Crea Playlist</h4>
                         </div>
                         <ul>
                             <li>
@@ -71,10 +76,14 @@
             <!-- "install app" and username -->
             <div class="row user bgc-pink">
                 <div class="col">
-                    <div class="icons">
-                        <h5>installa app</h5>
-                        <hr>
-                        <p>John Doe</p>
+                    <div class="icons install">
+                        <img src="./img/download.svg" alt="download">
+                        <h5>Installa App</h5>
+                    </div>
+                    <hr>
+                    <div class="icons margin10">
+                        <img class="userimg" src="./img/profile.svg" alt="user">
+                        <h4 class="white-text">John Doe</h4>
                     </div>
                 </div>
             </div>

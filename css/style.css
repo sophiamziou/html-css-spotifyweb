@@ -8,8 +8,8 @@
 
 /* BG COLORS FOR LAYOUT */
 
-.bgc-red{
-    background-color: red;
+.bgc-sidebar{
+    background-color: black;
 }
 
 .bgc-main{
@@ -28,12 +28,24 @@
     background-color: rgba(0, 0, 0, 0.515);
 }
 
-.bgc-pink{
-    background-color: lightpink;
+.bgc-sidebar{
+    background-color: black;
 }
 
 .bgc-dark{
     background-color: blue;
+}
+
+
+
+/* UTILITY */
+
+.white-text{
+    color: white;
+}
+
+.margin10{
+    margin: 10px 0;
 }
 
 /* TOPBAR */
@@ -63,21 +75,21 @@
 }
 
 .sidebar .row .col{
-    padding-right: 50px;
-    padding-left: 15px;
+    padding: 0 15px;
 }
 
 .logo{
     height: 70px;
     display: flex;
     justify-content: center;
+    padding-right: 30px;
 }
 
 .logo img{
     width: 100%;
 }
 
-.icons{
+.icons, .new-play{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -86,8 +98,22 @@
 }
 
 .icons img {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+.greyimg{
+    filter: invert(0.3);
+}
+
+.new-play button{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(163, 163, 163);
+}
+
+.new-play button i{
+    font-size: 20px;
 }
 
 .playlist ul li{
@@ -99,6 +125,26 @@
     vertical-align: middle;
     line-height: 30px;
 }
+
+.install img{
+    width: 15px;
+    height: 15px;
+}
+
+
+hr{
+    border: 0.5px solid rgb(72, 72, 72);
+}
+
+.userimg{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: rgb(128, 128, 128);
+}
+
+
 
 /* MAIN */
 
