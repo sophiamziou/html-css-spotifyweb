@@ -368,6 +368,7 @@ h6, li h5{
     gap: 20px;
 }
 
+
 .fa-circle-play{
     font-size: 25px;
 }
@@ -582,6 +583,11 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
         flex-direction: column;
     }
 
+    .volume{
+        flex-direction: column-reverse;
+        font-size: 15px;
+    }
+
 }
 
 /* EXTRA SMALL */
@@ -627,10 +633,6 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
 
     .player-icons{
         gap: 10px;
-    }
-
-    .line{
-        display: none;
     }
 
     .volume{
