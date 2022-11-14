@@ -171,7 +171,7 @@
     top: 0;
     right: 0;
     z-index: -1;
-    padding: 80px 0;
+    padding: 90px 0;
     color: white;
 }
 
@@ -594,4 +594,16 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
         width: 100%;
     }
 
+}
+
+/* BONUS responsive */
+
+@media screen and (max-height: 400px) {
+    .topbar{
+        display: none;
+    }
+
+    .main{
+        padding-top: 30px;
+    }
 }
