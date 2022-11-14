@@ -450,6 +450,10 @@ h6, li h5{
     font-size: 3rem;
 }
 
+.album-content h5{
+    cursor: pointer;
+}
+
   /* button */
   
 .top-btn button:hover{
@@ -477,6 +481,10 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
     padding: 0px 0px;
 }
 
+.icons:hover img{
+    filter: none;
+}
+
 .icons3 .icons:hover{
     border-left: 1px solid lightgreen;
     padding-left: 15px;
@@ -494,7 +502,7 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
     cursor: pointer;
 }
 
-.fa-circle-play:hover{
+.player-icons .fa-circle-play:hover{
     font-size: 27px;
 }
 
