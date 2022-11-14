@@ -162,8 +162,6 @@
     background-color: rgb(128, 128, 128);
 }
 
-
-
 /* MAIN */
 
 .main{
@@ -196,7 +194,7 @@
 }
 
 .menù-main ul li hr{
-    display: none;
+    visibility: hidden;
     border: 1px solid lightgreen;
     width: 70%;
     margin: 2px auto;
@@ -363,6 +361,7 @@ h6, li h5{
 }
 
 .player-icons{
+    height: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -474,11 +473,11 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
 }
 
 .menù-main li:hover #underline{
-    display: block;
+    visibility: visible;
 }
 
 .icons:hover .margin10{
-    padding: 0px 0px;
+    padding: 0px;
 }
 
 .icons:hover img{
