@@ -430,6 +430,10 @@ h6, li h5{
     opacity: 0;
     top: 0;
 }
+
+.round-mid{
+    border-radius: 50%;
+}
   
   
 .container-img:hover .middle {
@@ -439,7 +443,7 @@ h6, li h5{
     opacity: 1;
     cursor: pointer;
 }
-  
+
 .play {
     position: absolute;
     top: 50%;
