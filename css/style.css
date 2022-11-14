@@ -536,6 +536,10 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
         justify-content: flex-start;
     }
 
+    .song-icons{
+        flex-direction: column;
+    }
+
 }
 
 /* SMALL */
@@ -552,6 +556,11 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
     }
 
     .song-icons{
+        flex-direction: row;
+        margin: 0px;
+    }
+
+    .col-sm .content{
         flex-direction: column;
     }
 
@@ -598,6 +607,20 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
         width: 100%;
     }
 
+    .player-icons{
+        gap: 10px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .volume{
+        justify-content: flex-end;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
 }
 
 /* BONUS responsive */
@@ -609,5 +632,12 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
 
     .main{
         padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .player-bar{
+        display: none;
     }
 }
