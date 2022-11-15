@@ -80,7 +80,6 @@
     justify-content: space-between;
     flex-direction: column;
     color: rgb(97,101,106);
-    overflow: scroll;
 }
 
 .sidebar .row{
@@ -144,11 +143,28 @@
     line-height: 30px;
 }
 
+.menù{
+    height: calc(100% - 70px);
+}
+
+.playlist{
+    height: 70%;
+}
+
+.playlist ul{
+    height: 80%;
+    overflow: auto;
+}
+
+.user{
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+}
+
 .install img{
     width: 15px;
     height: 15px;
 }
-
 
 .user .col hr{
     border: 0.5px solid rgb(72, 72, 72);
