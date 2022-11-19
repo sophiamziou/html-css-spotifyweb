@@ -493,7 +493,7 @@ li h5:hover, .icons h5:hover, .new-play:hover, .song-icons i:hover{
     cursor: pointer;
 }
 
-.menù-main li:hover #underline{
+.menù-main li:hover .underline{
     visibility: visible;
 }
 
